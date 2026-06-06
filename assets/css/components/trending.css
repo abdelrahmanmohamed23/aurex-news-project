@@ -1,0 +1,24 @@
+.trending {
+  flex-direction: column;
+  gap: var(--space-md);
+  grid-row: span 2;
+}
+.trending__title-container {
+    gap: var(--space-sm);
+}
+.trending__title {
+    font-size: var(--font-size-xl);
+}
+
+
+@media (max-width: 1000px) {
+  .trending {
+    grid-row: 2;
+  }
+  .trending--article {
+    grid-row: 3;
+  }
+  .trending--category {
+    grid-row: 3;
+  }
+}

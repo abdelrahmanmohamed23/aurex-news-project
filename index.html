@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurex News</title>
+    <meta name="description" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./assets/css/main.css">
+    <script defer type="module" src="./assets/js2/main.js"></script>
+  </head>
+  <body>
+    <header class="u-line-bottom header">
+      <div class="u-flex-between header__container">
+        <h1 class="header__logo"><span class="header__logo-letter">A</span>urex</h1>
+        <nav class="header__nav">
+           <button class="u-none header__nav-button" id="dropmenu-btn"><svg class="header__nav-button-icon"   xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></button>
+          <ul class="u-flex-between header__nav-list">
+            <li><a data-link-name="home" class="header__nav-link header__nav-link--active">Home</a></li>
+          </ul>
+            
+        </nav>
+        <button class="u-flex" id="theme-changer">
+          <img
+            class="u-icons-width"
+            src="/assets/icons/moon-solid.png"
+            alt="Crescent Moon"
+          />
+        </button>
+      </div>
+    </header>
+    <main class="u-grid-between">
+      <section class="hero">
+        <div id="slider" class="hero__container u-size-full">
+          <!-- <a id="first-hero-a" href="" class="u-size-full">
+            <img class="u-size-full u-object-cover u-opacity-0" src="" alt="" />
+            <div class="flex hero-content u-absolute">
+              <p class="hero-category u-bg-transparent"></p>
+              <h2 class="u-line-clamp"></h2>
+              <p class="hero-description"></p>
+            </div>
+          </a>
+          <a id="second-hero-a" class="u-size-full" href="">
+            <img class="u-size-full u-object-cover u-opacity-0" src="" alt="" />
+            <div class="flex hero-content u-absolute">
+              <p class="hero-category u-bg-transparent"></p>
+              <h2 class="u-line-clamp"></h2>
+              <p class="hero-description"></p>
+            </div>
+          </a>
+          <a id="third-hero-a" href="" class="u-size-full">
+            <img class="u-size-full u-object-cover u-opacity-0" src="" alt="" />
+            <div class="flex hero-content u-absolute">
+              <p class="hero-category u-bg-transparent"></p>
+              <h2 class="u-line-clamp"></h2>
+              <p class="hero-description"></p>
+            </div>
+          </a> -->
+        </div>
+      </section>
+
+      <aside class="u-flex trending" id="trending">
+        
+        <div class="u-flex trending__title-container">
+          <h2 class="trending__title">Trending Now</h2>
+          <img
+            class="u-icons-width trending__icon"
+            src="/assets/icons/arrow-trend-up-solid.png"
+            alt="Arrow trend up"
+          />
+        </div>
+
+        <a class="article-card u-flex">
+          <img
+            class="u-object-cover article-card__img"
+            src="/assets/images/lissete-laverde-7OFTxbGWqwk-unsplash (1).jpg"
+            alt=""
+          />
+          <div class="article-card__content">
+            <h3 class="u-line-clamp article-card__title">title</h3>
+            <p class="article-card__description"><span>5 hours ago</span> | <span>Science</span></p>
+          </div>
+        </a>
+      </aside>
+      <section id="latest" class="latest u-flex">
+        <h2>Latest News</h2>
+        <a class="article-card u-flex">
+          <img
+            class="u-object-cover article-card__img article-card__img--latest "
+            src="/assets/images/lissete-laverde-7OFTxbGWqwk-unsplash (1).jpg"
+            alt=""
+          />
+          <div class="u-line-bottom article-card__content">
+            <h3 class="u-line-clamp article-card__title">title</h3>
+            <p class="article-card__description"><span>5 hours ago</span> | <span>Science</span></p>
+          </div>
+        </a>
+      </section>
+    </main>
+    <footer class="u-flex footer">
+      <p class="footer__copyright">©2026 - Aurex News | Source code licensed under MIT.</p>
+    </footer>
+    
+  </body>
+</html>

@@ -1,0 +1,28 @@
+body {
+   background-color: var(--color-bg);
+   font-size: var(--font-size-md);
+   color: var(--color-text);
+   font-family: var(--font-family-base);
+}
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: inherit;
+    color: inherit;
+}
+ol,ul {
+    list-style: none;
+}
+main {
+  padding: var(--space-xl) var(--space-lg);
+  gap: var(--space-xl) 0;
+  grid-template-columns: 75% 22%;
+  grid-template-rows: 60vh 1fr;
+  
+}
+@media (max-width: 1000px) {
+  main {
+    grid-template-rows: 60vh auto auto ;
+  }
+}

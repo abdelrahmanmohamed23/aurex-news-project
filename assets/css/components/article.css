@@ -1,0 +1,35 @@
+.article {
+  grid-row: span 2;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.article__content {
+  line-height: var(--space-xl);
+  font-weight: bold;
+  font-size: var(--font-size-lg);
+  width: 90%;
+}
+.article__img {
+  width: 90%;
+  height: 50vh;
+}
+.article__title {
+  font-size: var(--font-size-3xl);
+}
+.article__description {
+  color: var(--color-text-muted);
+  font-weight: bold;
+  width: 100%;
+  font-size: var(--font-size-sm);
+}
+@media (max-width: 1000px) {
+    .article {
+      grid-column: span 2;
+
+    }
+
+ 
+    
+}

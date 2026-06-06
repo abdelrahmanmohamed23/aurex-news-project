@@ -1,0 +1,176 @@
+{
+  "hero": [
+    {
+      "id": 1,
+      "category": "Technology",
+      "title": "New Solar-Powered Laptop Prototype Reduces Charging Time",
+      "description": "Researchers revealed a lightweight laptop prototype powered partially by solar energy for outdoor use.",
+      "suggestedImage": "Modern laptop under sunlight on a desk",
+      "imageUrl": "./assets/images/hero-images/adi-goldstein-EUsVwEOsblE-unsplash.jpg",
+      "date": "2026-05-22"
+    },
+    {
+      "id": 2,
+      "category": "Science",
+      "title": "Marine Scientists Discover Rare Coral Species in Deep Waters",
+      "description": "A new coral species was documented during a deep-sea exploration project.",
+      "suggestedImage": "Deep ocean coral reef with blue lighting",
+      "imageUrl": "./assets/images/hero-images/hiroko-yoshii-9y7y26C-l4Y-unsplash.jpg"
+    },
+    {
+      "id": 3,
+      "category": "Sports",
+      "title": "National Basketball Team Wins International Friendly Tournament",
+      "description": "The team secured the championship after a strong defensive performance in the final match.",
+      "suggestedImage": "Basketball players celebrating with trophy",
+      "imageUrl": "./assets/images/hero-images/kylie-osullivan-BfaBLVCBTI8-unsplash.jpg"
+    },
+    {
+      "id": 4,
+      "category": "Health",
+      "title": "New Fitness Study Highlights Benefits of Daily Walking",
+      "description": "Researchers found that short daily walks can improve focus and energy levels.",
+      "suggestedImage": "People walking in a park during sunrise",
+      "imageUrl": "./assets/images/hero-images/hush-naidoo-jade-photography-yo01Z-9HQAw-unsplash.jpg"
+    },
+    {
+      "id": 5,
+      "category": "Environment",
+      "title": "City Launches Large Urban Tree Planting Campaign",
+      "description": "Thousands of trees will be planted across public parks and roads this year.",
+      "suggestedImage": "Volunteers planting trees in a city park",
+      "imageUrl": "./assets/images/hero-images/angela-benito-WgGJjGN4_ck-unsplash.jpg"
+    }
+  ],
+  "trending": [
+    {
+      "id": 6,
+      "category": "Gaming",
+      "title": "Popular Indie Adventure Game Reaches One Million Players",
+      "description": "The game gained attention for its creative world design and relaxing gameplay.",
+      "suggestedImage": "Fantasy game environment with glowing lights",
+      "imageUrl": "./assets/images/hero-images/angela-benito-WgGJjGN4_ck-unsplash.jpg"
+    },
+    {
+      "id": 7,
+      "category": "Education",
+      "title": "Schools Introduce Interactive AI Learning Tools in Classrooms",
+      "description": "Several schools started testing AI-powered educational assistants.",
+      "suggestedImage": "Students using tablets in a classroom",
+      "imageUrl": "./assets/images/hero-images/angela-benito-WgGJjGN4_ck-unsplash.jpg"
+    },
+    {
+      "id": 8,
+      "category": "Travel",
+      "title": "Mountain Tourism Sees Major Increase During Spring Season",
+      "description": "Travelers are choosing nature destinations for short vacations and hiking trips.",
+      "suggestedImage": "Scenic mountain landscape with hikers",
+      "imageUrl": "./assets/images/hero-images/angela-benito-WgGJjGN4_ck-unsplash.jpg"
+    },
+    {
+      "id": 9,
+      "category": "Food",
+      "title": "Local Food Festival Attracts Thousands of Visitors",
+      "description": "The festival featured international dishes, desserts, and live cooking shows.",
+      "suggestedImage": "Outdoor food festival with colorful dishes",
+      "imageUrl": "./assets/images/hero-images/angela-benito-WgGJjGN4_ck-unsplash.jpg"
+    }
+  ],
+  "news": [
+    {
+      "id": 10,
+      "category": "Business",
+      "title": "Startup Launches Affordable Smart Home Device",
+      "description": "The device allows users to control lighting and temperature remotely.",
+      "suggestedImage": "Smart home device on modern table",
+      "imageUrl": "./assets/images/hero-images/adi-goldstein-EUsVwEOsblE-unsplash.jpg"
+       , "date": "2026-05-22"
+    },
+    {
+      "id": 11,
+      "category": "Entertainment",
+      "title": "Animated Movie Breaks Streaming Platform Records",
+      "description": "The movie became one of the most watched family releases this month.",
+      "suggestedImage": "Animated movie style cinema poster",
+      "imageUrl": "./assets/images/hero-images/adi-goldstein-EUsVwEOsblE-unsplash.jpg"
+    },
+    {
+      "id": 12,
+      "category": "Space",
+      "title": "Space Agency Tests New Reusable Rocket Engine",
+      "description": "Engineers completed a successful ground test for the engine prototype.",
+      "suggestedImage": "Rocket engine test with bright flames",
+      "imageUrl": "./assets/images/hero-images/adi-goldstein-EUsVwEOsblE-unsplash.jpg"
+    },
+    {
+      "id": 13,
+      "category": "Lifestyle",
+      "title": "Minimalist Home Designs Become More Popular Among Young Adults",
+      "description": "Designers say people are focusing on comfort and simple living spaces.",
+      "suggestedImage": "Minimal modern apartment interior",
+      "imageUrl": "./assets/images/hero-images/adi-goldstein-EUsVwEOsblE-unsplash.jpg"
+    },{
+  "id": 14,
+  "category": "Nature",
+  "title": "Wildlife Park Welcomes Birth of Rare Baby Panda",
+  "description": "Visitors celebrated the arrival of the newborn panda this week.",
+  "suggestedImage": "Baby panda with mother in a zoo habitat",
+  "imageUrl": "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7",
+  "date": "2026-05-22"
+},
+{
+  "id": 15,
+  "category": "Cars",
+  "title": "Electric Car Company Reveals Compact City Vehicle",
+  "description": "The new model focuses on energy efficiency and urban transportation.",
+  "suggestedImage": "Compact electric car in a modern city",
+  "imageUrl": "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
+  "date": "2026-05-22"
+},
+{
+  "id": 16,
+  "category": "Fashion",
+  "title": "Sustainable Clothing Brands Gain Popularity Worldwide",
+  "description": "Many shoppers are choosing environmentally friendly clothing options.",
+  "suggestedImage": "Modern eco-friendly fashion photoshoot",
+  "imageUrl": "https://images.unsplash.com/photo-1496747611176-843222e1e57c",
+  "date": "2026-05-22"
+},
+{
+  "id": 17,
+  "category": "Music",
+  "title": "International Music Festival Announces Summer Lineup",
+  "description": "Artists from different countries will perform across three stages.",
+  "suggestedImage": "Concert stage with lights and crowd",
+  "imageUrl": "https://images.unsplash.com/photo-1501386761578-eac5c94b800a",
+  "date": "2026-05-22"
+},
+{
+  "id": 18,
+  "category": "Photography",
+  "title": "Nature Photography Contest Winners Revealed",
+  "description": "Stunning wildlife and landscape images received international attention.",
+  "suggestedImage": "Photographer capturing nature at sunset",
+  "imageUrl": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4",
+  "date": "2026-05-22"
+},
+{
+  "id": 19,
+  "category": "Architecture",
+  "title": "Eco-Friendly Library Design Wins International Award",
+  "description": "The building uses natural lighting and energy-saving materials.",
+  "suggestedImage": "Modern eco-friendly library building",
+  "imageUrl": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2",
+  "date": "2026-05-22"
+},
+{
+  "id": 20,
+  "category": "Culture",
+  "title": "Traditional Art Exhibition Opens in Downtown Gallery",
+  "description": "Artists showcased paintings and handcrafted works inspired by local history.",
+  "suggestedImage": "Art gallery with traditional paintings",
+  "imageUrl": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b",
+  "date": "2026-05-22"
+}
+  ]
+}

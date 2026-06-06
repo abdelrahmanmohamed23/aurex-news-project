@@ -1,0 +1,17 @@
+.category {
+  flex-direction: column;
+ gap: var(--space-md);
+ grid-row: span 2;
+}
+.category__title {
+           margin-bottom: 0.25rem;
+               font-size: var(--font-size-xl);
+}
+
+
+@media (max-width: 1000px) {
+    .category {
+      grid-column: span 2;
+    }
+    
+}

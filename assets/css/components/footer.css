@@ -1,0 +1,10 @@
+.footer {
+ height: 8vh;
+    background-color: var(--color-bg-secondary);
+    align-items: center;
+    justify-content: center;
+}
+.footer__copyright {
+      font-weight: bold;
+    color: var(--color-text);
+}
