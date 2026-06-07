@@ -2,6 +2,7 @@ import {trendingRender} from "../features/trending/trending.render.js"
 import { themeRender } from "../features/theme/theme.render.js";
 import {sliderRender} from "../features/slider/slider.render.js"
 import {latestRender} from "../features/latest/latest.render.js"
+import {dropmenuRender} from "../features/dropmenu/dropmenu.render.js"
 export function render (state) {
   
 
@@ -18,6 +19,9 @@ trendingRender(state)
         break;
         case  "latest":
 latestRender(state)
+            break;
+            case "dropmenu": 
+            dropmenuRender(state)
             break;
     }
 

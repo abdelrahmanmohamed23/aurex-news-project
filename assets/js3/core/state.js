@@ -18,6 +18,9 @@ trending: {
 latest : {
     latestNews: null
 },
+dropmenu : {
+dropmenuAppearance: null,
+},
   lastUpdatedKey: null,
 };
 
