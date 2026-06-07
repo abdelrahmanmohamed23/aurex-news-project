@@ -1,4 +1,4 @@
-
+import {trendingRender} from "../features/trending/trending.render.js"
 import { themeRender } from "../features/theme/theme.render.js";
 import {sliderRender} from "../features/slider/slider.render.js"
 export function render (state) {
@@ -12,6 +12,10 @@ themeRender(state)
         case "slider": 
  sliderRender(state)
         break;
+        case "trending": 
+trendingRender(state)
+        break;
     }
+
 
 }

@@ -13,7 +13,6 @@ function createSlide(news) {
           `;
 }
 function addSlides(sliderNews) {
-
   sliderNews.forEach((element) => {
     slider.insertAdjacentHTML("beforeend", createSlide(element));
   });

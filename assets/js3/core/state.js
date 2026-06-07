@@ -12,11 +12,12 @@ slider: {
   },
   intervalId: null
 },
+trending: {
+    trendingNews: null
+},
   lastUpdatedKey: null,
 };
-export function getState () {
-    return state
-}
+
 export function dispatch(stateUpdater) {
 
 state = stateUpdater(state);

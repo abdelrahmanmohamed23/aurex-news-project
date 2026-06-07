@@ -1,9 +1,9 @@
-import { getSliderNews } from "./slider.service.js";
+import {getNewsBySection} from "../../utils/helpers.js"
 import { dispatch } from "../../core/state.js";
 import { sliderEvents } from "./slider.events.js";
 const SLIDER_DELAY = 5000;
 export function initSlider(news) {
-  const sliderNews = getSliderNews(news);
+  const sliderNews = getNewsBySection(news, "hero");
   dispatch(setSliderNews(sliderNews));
   dispatch(setupSliderInterval);
   sliderEvents();
@@ -17,7 +17,7 @@ function setSliderNews(sliderNews) {
         ...state.slider,
         sliderNews,
       },
-      lastUpdatedKey: "slider",
+      lastUpdatedKey: "slider"
     };
   };
 }
