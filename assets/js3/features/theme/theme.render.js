@@ -3,6 +3,7 @@ const root = document.documentElement;
 
 const themeChangerBtnIcon = document.getElementById("theme-changer").children[0];
 export function themeRender (state) {
+  
 if (state.theme === "light"){
  root.removeAttribute("data-theme")
 changeImage(themeChangerBtnIcon, `/assets/icons/moon-solid.png`, "Crescent Moon");

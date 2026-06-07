@@ -3,7 +3,7 @@ import { state } from "./sliderState.js"
 
 import {getDataBySection, handleShowArticlesClick, newsClickHandle} from "../../utils/helpers.js"
 const slider = document.getElementById("slider");
-const SLIDER_DELAY = 5000;
+
 export function initSlider (data, initArticle) {
 const heroData = getDataBySection(data, "hero")
 addSlides(heroData)
