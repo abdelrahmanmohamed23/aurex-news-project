@@ -67,6 +67,7 @@ function sliderAnimation(state) {
           activeElementNumber: 1,
         },
       },
+       lastUpdatedKey: "slider"
     };
   }
 
@@ -81,6 +82,7 @@ function sliderAnimation(state) {
         activeElementNumber: 1 + state.slider.animation.activeElementNumber,
       },
     },
+     lastUpdatedKey: "slider",
   };
 }
 

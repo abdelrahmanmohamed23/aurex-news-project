@@ -15,6 +15,9 @@ slider: {
 trending: {
     trendingNews: null
 },
+latest : {
+    latestNews: null
+},
   lastUpdatedKey: null,
 };
 
