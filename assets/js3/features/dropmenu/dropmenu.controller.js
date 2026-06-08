@@ -15,7 +15,7 @@ export function handleNavResponsiveness (state) {
             ...state, 
             dropmenu: {
                 ...state.dropmenu, 
-                dropmenuAppearance: false
+                appearance: false
             }, lastUpdatedKey: "dropmenu"
         }
     }
@@ -23,18 +23,18 @@ export function handleNavResponsiveness (state) {
         ...state, 
         dropmenu: {
             ...state.dropmenu, 
-            dropmenuAppearance: null
+            appearance: null
         },lastUpdatedKey: "dropmenu"
      }
 
 }
 export function dropmenuToggle (state) {
-if (state.dropmenu.dropmenuAppearance){
+if (state.dropmenu.appearance){
     return {
         ...state, 
         dropmenu: {
             ...state.dropmenu, 
-            dropmenuAppearance: false
+            appearance: false
         },lastUpdatedKey: "dropmenu"
      }
 
@@ -43,7 +43,7 @@ if (state.dropmenu.dropmenuAppearance){
         ...state, 
         dropmenu: {
             ...state.dropmenu, 
-            dropmenuAppearance: true
+            appearance: true
         },lastUpdatedKey: "dropmenu"
      }
 }

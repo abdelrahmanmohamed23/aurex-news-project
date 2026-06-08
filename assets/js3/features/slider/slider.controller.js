@@ -29,7 +29,7 @@ export function setupSliderInterval(state) {
       intervalId: setInterval(() => {
         dispatch(sliderAnimation);
       }, SLIDER_DELAY),
-    },
+    },  lastUpdatedKey: "slider"
   };
 }
 
@@ -86,13 +86,4 @@ function sliderAnimation(state) {
   };
 }
 
-export function clearSliderInterval(state) {
-  clearInterval(state.slider.intervalId);
-  return {
-    ...state,
-    slider: {
-      ...state.slider,
-      intervalId: null,
-    },
-  };
-}
+

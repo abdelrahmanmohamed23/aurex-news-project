@@ -33,3 +33,25 @@ sectionElement.insertAdjacentHTML("beforeend", createArticleCard(element, sectio
    });
     
 }
+
+
+export function requestArticleDisplay (newsId) {
+    const requestArticleEvent = new CustomEvent("articleRequest", {
+        detail: {
+ newsId
+        }
+    })
+    document.dispatchEvent(requestArticleEvent);
+}
+
+export function clearSliderInterval(state) {
+  clearInterval(state.slider.intervalId);
+  return {
+    ...state,
+    slider: {
+      ...state.slider,
+      intervalId: null,
+    },
+     lastUpdatedKey: "slider"
+  };
+}

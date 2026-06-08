@@ -19,9 +19,14 @@ latest : {
     latestNews: null
 },
 dropmenu : {
-dropmenuAppearance: null,
+appearance: null,
 },
-  lastUpdatedKey: null,
+article: {
+article: false,
+articleRendered: false,
+newsId: null
+},
+  lastUpdatedKey: null
 };
 
 export function dispatch(stateUpdater) {

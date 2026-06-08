@@ -2,7 +2,8 @@ const dropmenuBtn = document.getElementById("dropmenu-btn");
 const navList = document.querySelector("nav ul");
 
 export function dropmenuRender (state) {
-    const dropmenuAppearance = state.dropmenu.dropmenuAppearance
+ 
+    const dropmenuAppearance = state.dropmenu.appearance
 if (dropmenuAppearance === null) {
 defaultNav()
     return
