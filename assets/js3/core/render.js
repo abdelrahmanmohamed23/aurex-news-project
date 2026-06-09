@@ -5,6 +5,7 @@ import { latestRender } from "../features/latest/latest.render.js";
 import { dropmenuRender } from "../features/dropmenu/dropmenu.render.js";
 import { articleRender } from "../features/article/article.render.js";
 import { navigationRender , handleActiveNavLink} from "../features/navigation/navigaiton.render.js";
+import {categoryRender} from "../features/category/category.render.js"
 export function render(state) {
   switch (state.lastUpdatedKey) {
     case "theme":
@@ -31,6 +32,9 @@ export function render(state) {
 navigationRender(state)
 
       break;
+      case "category":
+        categoryRender(state)
+        break; 
   }
   handleActiveNavLink(state)
   

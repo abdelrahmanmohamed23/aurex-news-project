@@ -49,6 +49,10 @@ export function handleActiveNavLink (state) {
 if (activeLinkName === null) {
   if (activeLink){ activeLink.classList.remove("header__nav-link--active")}
 }else if (activeLinkName === "home") {
+   if (activeLink){ activeLink.classList.remove("header__nav-link--active")}
   navList.querySelector("[data-link-name='home']").classList.add("header__nav-link--active")
+}else {
+   if (activeLink){ activeLink.classList.remove("header__nav-link--active")}
+  navList.querySelector(`[data-link-name='${activeLinkName}']`).classList.add("header__nav-link--active")
 }
 }

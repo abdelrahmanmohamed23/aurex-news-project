@@ -17,11 +17,11 @@ function createArticleCard (news, section) {
            <a class="article-card u-flex u-none" data-news-id="${news.id}">
           <img
           onload="this.parentElement.classList.remove('u-none')"
-            class="u-object-cover article-card__img ${section === "latest" ? "article-card__img--latest" : ""}"
+            class="u-object-cover article-card__img ${section === "latest" || section === "category" ? "article-card__img--latest" : ""}"
             src="${news.image.sizes.small}"
             alt="${news.image.alt}"
           />
-          <div class="article-card__content ${section === "latest" ? "u-line-bottom" : ""}">
+          <div class="article-card__content ${section === "latest" || section === "category" ? "u-line-bottom" : ""}">
             <h3 class="u-line-clamp article-card__title">${news.title}</h3>
             <p class="article-card__description"><span></span> | <span>${news.category}</span></p>
           </div>
@@ -32,6 +32,7 @@ function createArticleCard (news, section) {
 export function addArticlesCards (news, section, sectionElement) {
    news.forEach(element => {
 sectionElement.insertAdjacentHTML("beforeend", createArticleCard(element, section));
+
    });
     
 }
@@ -43,7 +44,7 @@ export function requestArticleDisplay (newsId) {
  newsId
         }
     })
-    document.dispatchEvent(requestArticleEvent);
+    window.dispatchEvent(requestArticleEvent);
 }
 
 export function clearSliderInterval(state) {

@@ -32,6 +32,7 @@ navigation: {
     linksRendered: false,
     activePageType: null, 
 },
+category: null,
   lastUpdatedKey: null
 };
 

@@ -13,12 +13,11 @@ export function articleRender(state) {
     return element.id === state.article.newsId;
   });
 
-
- 
   displayArticle(news);
 }
 
 function createArticle(news) {
+ 
   return `
         <article class="u-flex article" >
     <h1 class="article__title">${news.title}</h1>
@@ -33,7 +32,10 @@ function createArticle(news) {
 function displayArticle(news) {
 
       const article = document.querySelector(".article");
+       const categoryContainer = document.getElementById("category")
       if (article) article.remove();
+       if (categoryContainer) categoryContainer.remove()
+       
   hero.classList.add("u-none");
   latest.classList.add("u-none");
   trending.classList.add("trending--article");

@@ -56,10 +56,13 @@ if (historyState.pageType === "article"){
     dispatch(updateStateFromHistoryState(historyState.pageType))
 
 
+} else if (historyState.pageType === "category"){
+  requestCategoryDisplay(historyState.category)
+  dispatch(updateStateFromHistoryState(historyState.pageType, historyState.category))
 }
 }
 
-function updateStateFromHistoryState (pageType) {
+function updateStateFromHistoryState (pageType, category) {
 
 if (!pageType) {
 return function (state) {
@@ -74,7 +77,7 @@ return function (state) {
           lastUpdatedKey: "navigation"
     }
 }
-}else {
+}else if (pageType === "article"){
     return function (state) {
     return {
         ...state,
@@ -88,6 +91,19 @@ return function (state) {
     }
 }
 
+} else if (pageType === "category") {
+ return function (state) {
+    return {
+        ...state,
+       
+        navigation: {
+            ...state.navigation, 
+            activePageType: pageType,
+       
+        },activeLinkName: category,
+        lastUpdatedKey: "navigation"
+    }
+}
 }
 }
 
@@ -99,5 +115,15 @@ export function handleHomeURL () {
     "",
     "/",
   );
+
+}
+function requestCategoryDisplay (category) {
+
+  const requestCategoryEvent = new CustomEvent("categoryRequest", {
+        detail: {
+ category
+        }
+    })
+    window.dispatchEvent(requestCategoryEvent);
 
 }
