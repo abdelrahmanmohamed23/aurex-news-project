@@ -13,5 +13,8 @@
     .category {
       grid-column: span 2;
     }
+    .article-card__img--category {
+     max-width: 15rem;
+}
     
 }
