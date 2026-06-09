@@ -1,3 +1,5 @@
+import {sliderAnimation} from "../features/slider/slider.controller.js"
+import {dispatch} from "../core/state.js"
 export function changeImage(img, url, alt) {
   img.setAttribute("src", url);
   img.setAttribute("alt", alt);
@@ -53,5 +55,17 @@ export function clearSliderInterval(state) {
       intervalId: null,
     },
      lastUpdatedKey: "slider"
+  };
+}
+const SLIDER_DELAY = 5000;
+export function setupSliderInterval(state) {
+  return {
+    ...state,
+    slider: {
+      ...state.slider,
+      intervalId: setInterval(() => {
+        dispatch(sliderAnimation);
+      }, SLIDER_DELAY),
+    },  lastUpdatedKey: "slider"
   };
 }

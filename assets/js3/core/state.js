@@ -1,6 +1,7 @@
 import { render } from "./render.js";
 
 let state = {
+   activeLinkName: "home",
 theme: "light",
 slider: {
     sliderNews: null,
@@ -25,6 +26,11 @@ article: {
 article: false,
 articleRendered: false,
 newsId: null
+},
+navigation: {
+    categories: null,
+    linksRendered: false,
+    activePageType: null, 
 },
   lastUpdatedKey: null
 };

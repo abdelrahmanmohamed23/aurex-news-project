@@ -1,6 +1,6 @@
 import { dispatch } from "../../core/state.js";
-import {setupSliderInterval} from "./slider.controller.js"
-import { requestArticleDisplay , clearSliderInterval} from "../../utils/helpers.js";
+
+import { requestArticleDisplay , clearSliderInterval, setupSliderInterval} from "../../utils/helpers.js";
 const slider = document.getElementById("slider");
 
 

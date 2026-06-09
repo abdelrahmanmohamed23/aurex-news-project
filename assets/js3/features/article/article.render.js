@@ -3,7 +3,6 @@ const hero = document.querySelector(".hero");
 const trending = document.querySelector(".trending");
 const latest = document.getElementById("latest");
 export function articleRender(state) {
-   
   const allNews = [
     ...state.slider.sliderNews,
     ...state.trending.trendingNews,
@@ -15,12 +14,8 @@ export function articleRender(state) {
   });
 
 
-
-
-  if (state.article.articleRendered) {
-removeRenderedArticle()
-  }
-  displayArticle(news)
+ 
+  displayArticle(news);
 }
 
 function createArticle(news) {
@@ -36,14 +31,18 @@ function createArticle(news) {
 }
 
 function displayArticle(news) {
+
+      const article = document.querySelector(".article");
+      if (article) article.remove();
   hero.classList.add("u-none");
   latest.classList.add("u-none");
   trending.classList.add("trending--article");
   trending.classList.remove("trending--category");
   main.insertAdjacentHTML("afterbegin", createArticle(news));
-  window.scrollTo(0, 0);
+
+ setTimeout( () => {
+    window.scrollTo(0, 0)
+ }, 0)
 }
 
-function removeRenderedArticle () {
-     main.children[0].remove()
-}
+

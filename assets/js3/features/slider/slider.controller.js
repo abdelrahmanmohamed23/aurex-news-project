@@ -1,7 +1,7 @@
-import {getNewsBySection} from "../../utils/helpers.js"
+import {getNewsBySection, setupSliderInterval} from "../../utils/helpers.js"
 import { dispatch } from "../../core/state.js";
 import { sliderEvents } from "./slider.events.js";
-const SLIDER_DELAY = 5000;
+
 export function initSlider(news) {
   const sliderNews = getNewsBySection(news, "hero");
   dispatch(setSliderNews(sliderNews));
@@ -21,19 +21,10 @@ function setSliderNews(sliderNews) {
     };
   };
 }
-export function setupSliderInterval(state) {
-  return {
-    ...state,
-    slider: {
-      ...state.slider,
-      intervalId: setInterval(() => {
-        dispatch(sliderAnimation);
-      }, SLIDER_DELAY),
-    },  lastUpdatedKey: "slider"
-  };
-}
 
-function sliderAnimation(state) {
+
+
+export function sliderAnimation(state) {
   if (
     state.slider.animation.nextElementNumber === state.slider.sliderNews.length
   ) {

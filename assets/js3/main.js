@@ -5,11 +5,13 @@ import {initTrending} from "./features/trending/trending.controller.js"
 import {initLatest} from "./features/latest/latest.controller.js"
 import {initDropmenu} from "./features/dropmenu/dropmenu.controller.js"
 import {initArticle} from "./features/article/article.controller.js"
+import {initNavigation} from "./features/navigation/navigation.controller.js"
 async function initApp () {
 initTheme()
 initDropmenu()
-const news = await getNews()
 initArticle()
+const news = await getNews()
+initNavigation(news)
 initSlider(news)
 initTrending(news)
 initLatest(news)

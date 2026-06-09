@@ -4,9 +4,9 @@ import { sliderRender } from "../features/slider/slider.render.js";
 import { latestRender } from "../features/latest/latest.render.js";
 import { dropmenuRender } from "../features/dropmenu/dropmenu.render.js";
 import { articleRender } from "../features/article/article.render.js";
+import { navigationRender , handleActiveNavLink} from "../features/navigation/navigaiton.render.js";
 export function render(state) {
   switch (state.lastUpdatedKey) {
-    
     case "theme":
       themeRender(state);
 
@@ -25,7 +25,13 @@ export function render(state) {
       break;
     case "article":
       articleRender(state);
-        
+
+      break;
+      case "navigation": 
+navigationRender(state)
+
       break;
   }
+  handleActiveNavLink(state)
+  
 }
