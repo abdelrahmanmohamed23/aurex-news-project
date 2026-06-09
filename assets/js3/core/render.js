@@ -4,8 +4,12 @@ import { sliderRender } from "../features/slider/slider.render.js";
 import { latestRender } from "../features/latest/latest.render.js";
 import { dropmenuRender } from "../features/dropmenu/dropmenu.render.js";
 import { articleRender } from "../features/article/article.render.js";
-import { navigationRender , handleActiveNavLink} from "../features/navigation/navigaiton.render.js";
-import {categoryRender} from "../features/category/category.render.js"
+import {
+  navigationRender,
+  handleActiveNavLink,
+} from "../features/navigation/navigaiton.render.js";
+import { categoryRender } from "../features/category/category.render.js";
+import { footerRender } from "../features/footer/footer.render.js";
 export function render(state) {
   switch (state.lastUpdatedKey) {
     case "theme":
@@ -28,14 +32,16 @@ export function render(state) {
       articleRender(state);
 
       break;
-      case "navigation": 
-navigationRender(state)
+    case "navigation":
+      navigationRender(state);
 
       break;
-      case "category":
-        categoryRender(state)
-        break; 
+    case "category":
+      categoryRender(state);
+      break;
+    case "footer":
+      footerRender(state);
+      break;
   }
-  handleActiveNavLink(state)
-  
+  handleActiveNavLink(state);
 }

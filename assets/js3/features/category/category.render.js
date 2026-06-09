@@ -39,6 +39,8 @@ function createCategoryContainer(category) {
   const latest = document.getElementById("latest");
 const categoryContainer = document.getElementById("category")
   const article = document.querySelector(".article");
+  const trending = document.getElementById("trending")
+  trending.classList.add("trending--category")
   hero.classList.add("u-none");
   latest.classList.add("u-none");
   if (article) article.remove();

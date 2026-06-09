@@ -29,6 +29,9 @@ function displayHome() {
   const latest = document.getElementById("latest");
   const article = document.querySelector(".article");
   const category = document.getElementById("category");
+  const trending = document.getElementById("trending")
+  trending.classList.remove("trending--category")
+trending.classList.remove("trending--article")
 
    
   hero.classList.remove("u-none");

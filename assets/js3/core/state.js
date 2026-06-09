@@ -33,6 +33,7 @@ navigation: {
     activePageType: null, 
 },
 category: null,
+footerYear: null,
   lastUpdatedKey: null
 };
 

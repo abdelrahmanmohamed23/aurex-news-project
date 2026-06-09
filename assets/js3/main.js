@@ -7,10 +7,12 @@ import { initDropmenu } from "./features/dropmenu/dropmenu.controller.js";
 import { initArticle } from "./features/article/article.controller.js";
 import { initNavigation } from "./features/navigation/navigation.controller.js";
 import { initCategory } from "./features/category/category.controller.js";
+import {initFooter} from "./features/footer/footer.controller.js"
 async function initApp() {
   initTheme();
   initDropmenu();
   initArticle();
+  initFooter()
   const news = await getNews();
 
   initSlider(news);
