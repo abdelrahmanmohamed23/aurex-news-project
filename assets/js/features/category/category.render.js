@@ -39,7 +39,7 @@ function createCategoryContainer(category) {
 
     document.querySelector("main").insertAdjacentHTML("afterbegin", `
 <section id="category" class="category u-flex"> 
-<h2 class="category__title">${category}</h2>
+<h2 class="category__title">${category[0].toUpperCase() + category.slice(1)}</h2>
 </section>
 `);
 scrollToTop()

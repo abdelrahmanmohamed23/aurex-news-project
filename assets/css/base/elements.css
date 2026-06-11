@@ -19,6 +19,7 @@ main {
   gap: var(--space-xl) 0;
   grid-template-columns: 75% 22%;
   grid-template-rows: 60vh 1fr;
+  min-height: 100vh;
   
 }
 @media (max-width: 1000px) {

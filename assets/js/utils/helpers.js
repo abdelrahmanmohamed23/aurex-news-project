@@ -22,7 +22,7 @@ function createArticleCard(news, section) {
           />
           <div class="article-card__content ${section === "latest" || section === "category" ? "u-line-bottom" : ""}">
             <h3 class="u-line-clamp article-card__title">${news.title}</h3>
-            <p class="article-card__description"><span></span> | <span>${news.category}</span></p>
+            <p class="article-card__description">${news.category[0].toUpperCase() + news.category.slice(1)} | ${news.date}</p>
           </div>
         </a>
 
@@ -72,12 +72,19 @@ export function setupSliderInterval(state) {
 }
 
 export function setupPage(pageType) {
+  const main = document.querySelector("main")
   const hero = document.querySelector(".hero");
   const latest = document.getElementById("latest");
   const article = document.querySelector(".article");
   const category = document.getElementById("category");
 
   const trending = document.getElementById("trending");
+main.classList.remove("u-fade-in")
+
+  void main.offsetWidth;
+main.classList.add("u-fade-in")
+
+
 
   if (pageType === "article") {
           if (article) article.remove();
@@ -105,7 +112,16 @@ export function setupPage(pageType) {
 }
 
 export function scrollToTop () {
-    setTimeout( () => {
+  requestAnimationFrame(()=>{
+requestAnimationFrame(
+  ()=> {
     window.scrollTo(0, 0)
- }, 0)
+if (document.documentElement) document.documentElement.scrollTop = 0;
+      if (document.body) document.body.scrollTop = 0;
+  }
+)
+}
+ 
+  )
+    
 }

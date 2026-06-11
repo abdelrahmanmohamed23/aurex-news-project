@@ -5,7 +5,7 @@ function createSlide(news) {
   <a class="hero__link u-size-full u-none " data-news-id="${news.id}">
             <img onload="this.parentElement.classList.remove('u-none')" class="hero__img u-size-full u-object-cover u-opacity-0" src="${news.image.sizes.large}" alt="${news.image.alt}" />
             <div class="flex hero__content">
-              <p class="hero__category">${news.category}</p>
+              <p class="hero__category">${news.category[0].toUpperCase() + news.category.slice(1)}</p>
               <h2 style="text-shadow: ${news.image.text_shadow};" class="u-line-clamp hero__title">${news.title}</h2>
               <p style="text-shadow: ${news.image.text_shadow};" class="hero__description">${news.date}</p>
             </div>
@@ -19,13 +19,14 @@ function addSlides(sliderNews) {
 }
 
 export function sliderRender(state) {
-
-  if (!state.slider.animation.animationStarted && slider.children.length === 0) {
-    addSlides(state.slider.sliderNews)
+  if (
+    !state.slider.animation.animationStarted &&
+    slider.children.length === 0
+  ) {
+    addSlides(state.slider.sliderNews);
     sliderPreparation();
-  } else if (state.slider.animation.animationStarted){
-moveSlides(state)
-
+  } else if (state.slider.animation.animationStarted) {
+    moveSlides(state);
   }
 }
 
@@ -35,7 +36,6 @@ function sliderPreparation() {
       resetSlidePosition(element);
     }
   });
-
 }
 
 function moveSlides(state) {
@@ -70,5 +70,3 @@ function activateSlide(element) {
   element.style.opacity = 1;
   element.style.transform = "translateX(0)";
 }
-
-

@@ -14,7 +14,7 @@ async function initApp() {
   initArticle();
   initFooter()
   const news = await getNews();
-
+console.log(news)
   initSlider(news);
   initTrending(news);
   initLatest(news);

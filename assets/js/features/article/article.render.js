@@ -22,8 +22,8 @@ function createArticle(news) {
   return `
         <article class="u-flex article" >
     <h1 class="article__title">${news.title}</h1>
-    <p class="article__description" >${news.category} | ${news.date}</p>
-    <img class="u-object-cover article__img" src="${news.image.sizes.large}">
+    <p class="article__description" >${news.category[0].toUpperCase() + news.category.slice(1)} | ${news.date}</p>
+    <img  onload="this.classList.remove('u-none')" class="u-object-cover article__img u-none" src="${news.image.sizes.large}">
     <p class="article__content">${news.article}</p>
     </article>  
     

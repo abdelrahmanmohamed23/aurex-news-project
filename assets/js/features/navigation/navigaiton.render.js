@@ -1,4 +1,5 @@
 const navList = document.querySelector("nav ul");
+
 import { setupPage,scrollToTop} from "../../utils/helpers.js"
 export function navigationRender(state) {
   if (!state.navigation.linksRendered) {
@@ -20,7 +21,7 @@ function addLinksToNav(categories) {
 
 function createLink(category) {
   return `
- <li><a data-link-name="${category}" class="header__nav-link">${category}</a></li>
+ <li><a data-link-name="${category}" class="header__nav-link">${category[0].toUpperCase() + category.slice(1)}</a></li>
 
 `;
 }
@@ -28,7 +29,6 @@ function createLink(category) {
 function displayHome() {
 
    setupPage("home")
-
 scrollToTop()
 }
 

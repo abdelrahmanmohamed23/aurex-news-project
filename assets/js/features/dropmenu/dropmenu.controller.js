@@ -1,7 +1,7 @@
 
 import { dispatch } from "../../core/state.js";
 import {dropmenuEvents} from "./dropmenu.events.js"
-const DROPMENU_BREAKPOINT = 780;
+const DROPMENU_BREAKPOINT = 880;
 export function initDropmenu () {
 dispatch(handleNavResponsiveness)
 dropmenuEvents()
@@ -9,8 +9,8 @@ dropmenuEvents()
 }
 
 export function handleNavResponsiveness (state) {
-  
-    if (window.innerWidth  <= 780 ) {
+  console.log(window.innerWidth )
+    if (window.innerWidth  <= DROPMENU_BREAKPOINT ) {
         return {
             ...state, 
             dropmenu: {

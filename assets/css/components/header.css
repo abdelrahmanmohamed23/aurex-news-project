@@ -43,10 +43,7 @@
      transition: var(--transition-normal);
      cursor: pointer;
 }
-.header__nav-link:hover {
-    text-decoration: underline var(--color-hover) var(--underline-thickness);
-    text-underline-offset: var(--space-md); 
-}
+
 
 .header__nav-link--active {
   text-decoration: underline var(--color-accent) var(--underline-thickness);
@@ -70,4 +67,10 @@ margin-top: 12vh;
  .header__nav-button--close {
  transition: var( --transition-normal);
     transform: translate(-50%, -50%) rotate(0);
+ }
+ @media (hover: hover) {
+  .header__nav-link:hover {
+    text-decoration: underline var(--color-hover) var(--underline-thickness);
+    text-underline-offset: var(--space-md); 
+}
  }

@@ -14,11 +14,14 @@
 @media (max-width: 1000px) {
   .trending {
     grid-row: 2;
+    grid-column: span 2;
   }
   .trending--article {
     grid-row: 3;
+    
   }
   .trending--category {
     grid-row: 3;
+     
   }
 }

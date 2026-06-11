@@ -7,7 +7,7 @@
 .article-card__img{
      width: 50%;
      height: 100%;
-
+flex-shrink: 0;
   border-radius: var(--radius-sm);
   background-color: var(--color-bg-secondary);
 }
