@@ -46,7 +46,9 @@
 
 
 .header__nav-link--active {
-  text-decoration: underline var(--color-accent) var(--underline-thickness);
+
+  text-decoration: underline var(--color-accent)  var(--underline-thickness);
+
   text-underline-offset: var(--space-md);
 }
 .header__nav-list--dropmenu {

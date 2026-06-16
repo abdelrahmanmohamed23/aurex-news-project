@@ -2,7 +2,7 @@
 
 
 export async function getNews () {
-    try {
+  
         const response = await fetch(URL)
         
         
@@ -12,9 +12,5 @@ export async function getNews () {
    
     return response.json();
     
-    }catch (error) {
-        console.error(error.message)
-
-    }
-
+ 
 }
