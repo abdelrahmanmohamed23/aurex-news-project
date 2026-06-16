@@ -18,7 +18,7 @@ function createArticleCard(news, section) {
 
           <img 
           crossorigin="anonymous"
-          ${section === "latest" || section === "category" ? ' sizes="(max-width: 1000px) 240px, 25vw" loading="lazy"' : 'sizes="(max-width: 1000px) 160px, 11vw"'}
+          ${section === "latest" || section === "category" ? ' sizes="(max-width: 1350px) 240px, 25vw" loading="lazy"' : 'sizes="(max-width: 1350px) 160px, 11vw"'}
           onload="this.parentElement.classList.remove('u-opacity-0')"
             class="u-object-cover article-card__img ${section === "latest" ? "article-card__img--latest" : section === "category" ? "article-card__img--category" : ""}"
             srcset="${news.image.sizes.large} 1200w, ${news.image.sizes.medium} 768w, ${news.image.sizes.small} 480w"
@@ -65,6 +65,11 @@ export function clearSliderInterval(state) {
 }
 const SLIDER_DELAY = 5000;
 export function setupSliderInterval(state) {
+  if (state.slider.intervalId !== null) {
+    return {
+      ...state,
+    };
+  }
   return {
     ...state,
     slider: {

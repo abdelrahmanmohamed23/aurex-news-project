@@ -9,7 +9,7 @@
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1350px) {
     .category {
       grid-column: span 2;
     }

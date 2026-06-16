@@ -11,6 +11,10 @@ transition: transform var( --transition-slow) ;
 
   cursor: pointer;
 }
+.hero__link:focus-visible {
+  outline: 2px solid var(--color-accent);
+ outline-offset: -2px;
+}
 .hero__content {
   position: absolute;
    top: 20%;
@@ -41,7 +45,7 @@ transition: transform var( --transition-slow) ;
 
 
 }
-@media (max-width: 1000px) {
+@media (max-width: 1350px) {
     .hero {
       grid-column: span 2;
 

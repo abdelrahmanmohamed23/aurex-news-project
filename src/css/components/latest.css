@@ -6,7 +6,7 @@
        margin-bottom: 0.25rem;
      max-width: 50%;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1350px) {
    .latest {
       grid-row: 3;
       grid-column: span 2;

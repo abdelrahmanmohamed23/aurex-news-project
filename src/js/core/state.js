@@ -45,6 +45,3 @@ state = stateUpdater(state);
   render(state);
 }
 
-export function getState () {
-    return state
-}

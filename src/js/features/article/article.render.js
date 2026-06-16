@@ -24,7 +24,7 @@ function createArticle(news) {
     <p class="article__description" >${news.category[0].toUpperCase() + news.category.slice(1)} | ${news.date}</p>
     <img crossorigin="anonymous" alt="${news.image.alt}" srcset="${news.image.sizes.large} 1200w, ${news.image.sizes.medium} 768w, ${news.image.sizes.small} 480w"
             
-     sizes="(max-width: 1000px) 90vw, 68vw" onload="this.classList.remove('u-opacity-0')" class="u-object-cover article__img u-opacity-0" src="${news.image.sizes.small}" >
+     sizes="(max-width: 1350px) 90vw, 68vw" onload="this.classList.remove('u-opacity-0')" class="u-object-cover article__img u-opacity-0" src="${news.image.sizes.small}" >
     <p class="article__content">${news.article}</p>
     </article>  
     

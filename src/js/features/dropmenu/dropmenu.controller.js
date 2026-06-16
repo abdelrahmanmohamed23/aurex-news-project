@@ -9,7 +9,7 @@ dropmenuEvents()
 }
 
 export function handleNavResponsiveness (state) {
-  console.log(window.innerWidth )
+  
     if (window.innerWidth  <= DROPMENU_BREAKPOINT ) {
         return {
             ...state, 

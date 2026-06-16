@@ -1,4 +1,4 @@
-import { dispatch , getState} from "../../core/state.js";
+import { dispatch} from "../../core/state.js";
 import { getCategories } from "./navigation.service.js";
 import {navigaitonEvents} from "./navigation.events.js"
 import {requestArticleDisplay, setupSliderInterval} from "../../utils/helpers.js"
@@ -45,9 +45,9 @@ function setCategories(categories) {
 export function handleBrowserNavigation (historyState) {
  
 if (!historyState) {
-if (getState().slider.intervalId === null) {
+
   dispatch(setupSliderInterval)
-}
+
 dispatch(updateStateFromHistoryState(null))
 
 return

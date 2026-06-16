@@ -20,5 +20,11 @@ slider.addEventListener("mouseleave", () => {
      
     });
   });
+  slider.addEventListener("focusin",()=> {
+    dispatch(clearSliderInterval)
+  })
+  slider.addEventListener("focusout", ()=> {
+    dispatch(setupSliderInterval)
+  })
   
 }

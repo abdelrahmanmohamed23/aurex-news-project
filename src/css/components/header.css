@@ -40,7 +40,9 @@
 }
 .header__nav-link {
        font-weight: bold;
-     transition: var(--transition-normal);
+     transition: color var(--transition-normal),
+     text-decoration var(--transition-normal);
+   text-underline-offset: var(--space-md);
      cursor: pointer;
 }
 
@@ -49,7 +51,7 @@
 
   text-decoration: underline var(--color-accent)  var(--underline-thickness);
 
-  text-underline-offset: var(--space-md);
+
 }
 .header__nav-list--dropmenu {
  flex-direction: column;
@@ -73,6 +75,6 @@ margin-top: 12vh;
  @media (hover: hover) {
   .header__nav-link:hover {
     text-decoration: underline var(--color-hover) var(--underline-thickness);
-    text-underline-offset: var(--space-md); 
+    
 }
  }

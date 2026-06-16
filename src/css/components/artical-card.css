@@ -25,7 +25,7 @@ flex: 1;
 .article-card__description, .article-card__title {
    width: fit-content;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1350px) {
  .article-card__img {
     max-width: 10rem;
     
