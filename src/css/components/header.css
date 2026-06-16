@@ -53,7 +53,7 @@
 
 
 }
-.header__nav-list--dropmenu {
+.header__nav-list--dropdown {
  flex-direction: column;
 margin-top: 12vh;
     background-color: var(--color-bg);

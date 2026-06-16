@@ -19,7 +19,7 @@ trending: {
 latest : {
     latestNews: null
 },
-dropmenu : {
+dropdown : {
 appearance: null,
 },
 article: {

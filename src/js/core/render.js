@@ -2,7 +2,7 @@ import { trendingRender } from "../features/trending/trending.render.js";
 import { themeRender } from "../features/theme/theme.render.js";
 import { sliderRender } from "../features/slider/slider.render.js";
 import { latestRender } from "../features/latest/latest.render.js";
-import { dropmenuRender } from "../features/dropmenu/dropmenu.render.js";
+import { dropdownRender } from "../features/dropdown/dropdown.render.js";
 import { articleRender } from "../features/article/article.render.js";
 import {
   navigationRender,
@@ -25,8 +25,8 @@ export function render(state) {
     case "latest":
       latestRender(state);
       break;
-    case "dropmenu":
-      dropmenuRender(state);
+    case "dropdown":
+      dropdownRender(state);
       break;
     case "article":
       articleRender(state);
