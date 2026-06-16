@@ -1,0 +1,24 @@
+
+
+@import "./settings/colors.css";
+@import "./settings/font-size.css";
+@import "./settings/fonts.css";
+@import "./settings/space.css";
+@import "./settings/variables.css";
+
+@import "./base/reset.css";
+@import "./base/elements.css";
+@import "./base/font.css";
+
+@import "./components/header.css";
+@import "./components/hero.css";
+@import "./components/artical-card.css";
+@import "./components/trending.css";
+@import "./components/latest.css";
+@import "./components/article.css";  
+@import "./components/category.css";
+
+
+@import "./components/footer.css";
+
+@import "./utilities/utilities.css";
