@@ -21,7 +21,7 @@ function addLinksToNav(categories) {
 
 function createLink(category) {
   return `
- <li><a data-link-name="${category}" class="header__nav-link">${category[0].toUpperCase() + category.slice(1)}</a></li>
+ <li><a href="/${category}" data-link-name="${category}" class="header__nav-link">${category[0].toUpperCase() + category.slice(1)}</a></li>
 
 `;
 }

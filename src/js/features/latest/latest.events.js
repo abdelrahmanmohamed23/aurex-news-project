@@ -3,7 +3,8 @@ const latestSection = document.getElementById("latest")
 export function latestEvents () {
 [...latestSection.children].forEach((element) => {
 
-element.addEventListener("click", () => {
+element.addEventListener("click", (event) => {
+   event.preventDefault()
  requestArticleDisplay(Number(element.getAttribute("data-news-id")));
 })
 

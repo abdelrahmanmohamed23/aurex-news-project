@@ -4,6 +4,9 @@ body {
    color: var(--color-text);
    font-family: var(--font-family-base);
 }
+a {
+   all: unset;
+}
 button {
     border: none;
     background-color: transparent;

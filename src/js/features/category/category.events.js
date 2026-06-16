@@ -7,6 +7,7 @@ export function categoryEvents () {
     const links = Array.from(document.querySelectorAll("nav a")).slice(1)
 links.forEach((element)=> {
 element.addEventListener("click", (event) => {
+    event.preventDefault()
     dispatch(handleCategoryRequest(event.currentTarget.getAttribute("data-link-name")))
    dispatch(clearSliderInterval)
 })
@@ -21,6 +22,7 @@ window.addEventListener("requestAddingClick", (event)=> {
     
     event.detail.news.forEach((element)=> {
 element.addEventListener("click", (clickEvent)=> {
+    clickEvent.preventDefault()
   requestArticleDisplay(Number(clickEvent.currentTarget.getAttribute("data-news-id")));
 })
     })

@@ -8,7 +8,8 @@ export function navigaitonEvents() {
   window.addEventListener("popstate", (event) => {
     handleBrowserNavigation(event.state);
   });
-  homeNavLink.addEventListener("click", ()=> {
+  homeNavLink.addEventListener("click", (event)=> {
+    event.preventDefault()
     dispatch((state)=> {
         return {
         ...state,

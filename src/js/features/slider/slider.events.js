@@ -14,7 +14,8 @@ slider.addEventListener("mouseleave", () => {
   
 });
  [...slider.children].forEach((element) => {
-    element.addEventListener("click", () => {
+    element.addEventListener("click", (event) => {
+      event.preventDefault()
       requestArticleDisplay(Number(element.getAttribute("data-news-id")));
      
     });

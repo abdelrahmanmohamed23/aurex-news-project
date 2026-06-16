@@ -13,10 +13,11 @@ export function getNewsBySection(news, section) {
 
 function createArticleCard(news, section) {
   return `
-           <a class="article-card u-flex u-opacity-0" data-news-id="${news.id}">
+           <a href="/article/news-id-${news.id}" class="article-card u-flex u-opacity-0" data-news-id="${news.id}">
       
 
           <img 
+          crossorigin="anonymous"
           ${section === "latest" || section === "category" ? ' sizes="(max-width: 1000px) 240px, 25vw" loading="lazy"' : 'sizes="(max-width: 1000px) 160px, 11vw"'}
           onload="this.parentElement.classList.remove('u-opacity-0')"
             class="u-object-cover article-card__img ${section === "latest" ? "article-card__img--latest" : section === "category" ? "article-card__img--category" : ""}"
