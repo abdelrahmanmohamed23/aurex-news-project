@@ -1,7 +1,7 @@
 {
   "name": "aurex-news-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "A fast, SEO-friendly, and accessible News SPA built with Vanilla JavaScript, featuring seamless browser history and custom JSON data integration.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
