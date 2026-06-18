@@ -64,14 +64,15 @@ function resetSlidePosition(element) {
   element.style.opacity = 0;
   element.style.transform = "translateX(-100%)";
 
-  
+  element.setAttribute("tabindex", -1)
 }
 function moveSlideToEndPosition(element) {
   element.style.opacity = 1;
   element.style.transform = "translateX(100%)";
-  
+    element.setAttribute("tabindex", -1)
 }
 function activateSlide(element) {
   element.style.opacity = 1;
   element.style.transform = "translateX(0)";
+    element.setAttribute("tabindex", 0)
 }
