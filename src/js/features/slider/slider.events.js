@@ -24,7 +24,8 @@ slider.addEventListener("mouseleave", () => {
      
     });
   });
-  slider.addEventListener("focusin",()=> {
+  slider.addEventListener("focusin",(event)=> {
+    if (!event.target.matches(":focus-visible")) return
     dispatch(clearSliderInterval)
   })
   slider.addEventListener("focusout", ()=> {
