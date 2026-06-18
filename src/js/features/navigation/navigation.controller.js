@@ -37,9 +37,10 @@ export function handleBrowserNavigation (historyState) {
  
 if (!historyState) {
 
-  dispatch(setupSliderInterval)
+
 
 dispatch(updateStateFromHistoryState(null))
+  dispatch(setupSliderInterval)
 
 return
 }
