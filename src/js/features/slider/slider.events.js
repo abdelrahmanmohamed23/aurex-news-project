@@ -5,7 +5,8 @@ const slider = document.getElementById("slider");
 
 
 export function sliderEvents() {
-slider.addEventListener("mouseenter", ()=>{
+  if (window.matchMedia("(hover: hover)").matches) {
+    slider.addEventListener("mouseenter", ()=>{
     dispatch(clearSliderInterval)
 
 })
@@ -13,6 +14,9 @@ slider.addEventListener("mouseleave", () => {
     dispatch(setupSliderInterval)
   
 });
+
+  }
+
  [...slider.children].forEach((element) => {
     element.addEventListener("click", (event) => {
       event.preventDefault()
