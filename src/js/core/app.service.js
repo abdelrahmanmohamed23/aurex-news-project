@@ -1,4 +1,4 @@
- const  URL = "/data/news.json";
+ const  URL = "/aurex-news-project/data/news.json";
 
 
 export async function getNews () {
