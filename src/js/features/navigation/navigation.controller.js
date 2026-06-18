@@ -102,11 +102,11 @@ return function (state) {
 
 export function handleHomeURL () {
    
-    if (location.href === `${location.origin}/` ) return
+    if (location.href === `${location.origin}/aurex-news-project/` ) return
   history.pushState(
     null,
     "",
-    "/",
+    "/aurex-news-project/",
   );
 
 }

@@ -13,7 +13,7 @@ export function getNewsBySection(news, section) {
 
 function createArticleCard(news, section) {
   return `
-           <a href="/article/news-id-${news.id}" class="article-card u-flex u-opacity-0" data-news-id="${news.id}">
+           <a href="/aurex-news-project/article/news-id-${news.id}" class="article-card u-flex u-opacity-0" data-news-id="${news.id}">
       
 
           <img 
@@ -65,9 +65,10 @@ export function clearSliderInterval(state) {
 }
 const SLIDER_DELAY = 5000;
 export function setupSliderInterval(state) {
-  if (state.slider.intervalId !== null) {
+  if (state.slider.intervalId !== null || state.activeLinkName !== "home") {
     return {
       ...state,
+      lastUpdatedKey: "slider"
     };
   }
   return {

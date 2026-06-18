@@ -26,14 +26,14 @@ function pushArticleToPopstate(newsId) {
   
   if (
     location.href ===
-    `${location.origin}/article/news-id-${newsId}`
+    `${location.origin}/aurex-news-project/article/news-id-${newsId}`
   ) return;
    
 
   history.pushState(
     {pageType:"article", newsId },
     "",
-    `/article/news-id-${newsId}`,
+    `/aurex-news-project/article/news-id-${newsId}`,
   );
 }
 

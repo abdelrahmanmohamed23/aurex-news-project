@@ -2,7 +2,7 @@ const slider = document.getElementById("slider");
 
 function createSlide(news, newsIndex) {
   return `
-  <a href="/article/news-id-${news.id}" class="hero__link u-size-full u-opacity-0 " data-news-id="${news.id}">
+  <a href="/aurex-news-project/article/news-id-${news.id}" class="hero__link u-size-full u-opacity-0 " data-news-id="${news.id}">
          <img crossorigin="anonymous" sizes="(max-width: 1350px) 100vw, 80vw" ${newsIndex === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} onload="this.parentElement.classList.remove('u-opacity-0')" class="hero__img u-size-full u-object-cover " src="${news.image.sizes.small}" srcset="${news.image.sizes.large} 1200w, ${news.image.sizes.medium} 768w, ${news.image.sizes.small} 480w" alt="${news.image.alt}" />
        
             <div class="flex hero__content">

@@ -22,13 +22,13 @@ function pushArticleToPopstate(category) {
   
   if (
     location.href ===
-    `${location.origin}/${category}`
+    `${location.origin}/aurex-news-project/${category}`
   ) return;
    
 
   history.pushState(
     {pageType:"category", category },
     "",
-    `/${category}`,
+    `/aurex-news-project/${category}`,
   );
 }
