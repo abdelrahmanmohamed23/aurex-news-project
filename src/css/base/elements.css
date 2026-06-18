@@ -26,8 +26,15 @@ main {
   min-height: 100vh;
   
 }
-@media (max-width: 1272px) {
+  .main--category {
+    grid-template-rows: auto auto;
+  }
+  .main--article {
+    grid-template-rows: auto auto;
+  }
+@media (max-width:  1350px) {
   main {
     grid-template-rows: 60vh auto auto ;
   }
+
 }

@@ -23,18 +23,10 @@ const news = [
   })
     addArticlesCards(news, "category", document.getElementById("category"))
 
-//    allNews.forEach((element)=> {
-//     if (element.category !== state.category) return
-
-//     //  document
-//     //       .getElementById("category")
-//     //       .insertAdjacentHTML("beforeend", createArticleCard(element));
-//     addArticlesCards(element, "category", document.getElementById("category"))
-//   })
-
 }
 
 function createCategoryContainer(category) {
+ 
   setupPage("category")
 
     document.querySelector("main").insertAdjacentHTML("afterbegin", `

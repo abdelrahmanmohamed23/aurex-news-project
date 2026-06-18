@@ -87,13 +87,13 @@ export function setupPage(pageType) {
   const latest = document.getElementById("latest");
   const article = document.querySelector(".article");
   const category = document.getElementById("category");
-
+const main = document.querySelector("main")
   const trending = document.getElementById("trending");
 
   if (pageType === "article") {
     if (article) article.remove();
     if (category) category.remove();
-
+ main.classList.add("main--article")
     hero.classList.add("u-none");
     latest.classList.add("u-none");
     trending.classList.add("trending--article");
@@ -102,12 +102,15 @@ export function setupPage(pageType) {
     trending.classList.add("trending--category");
     hero.classList.add("u-none");
     latest.classList.add("u-none");
+     main.classList.add("main--category")
     if (article) article.remove();
     if (category) category.remove();
+
   } else {
     trending.classList.remove("trending--category");
     trending.classList.remove("trending--article");
-
+ main.classList.remove("main--article")
+  main.classList.remove("main--category")
     hero.classList.remove("u-none");
     latest.classList.remove("u-none");
     if (article) article.remove();

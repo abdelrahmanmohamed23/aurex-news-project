@@ -20,16 +20,7 @@ export function initNavigation(news) {
 
 function setCategories(categories) {
   return function (state) {
-    // if (state.navigation.categories) {
-    //   return {
-    //     ...state,
-    //     navigation: {
-    //       ...state.navigation,
-    //       linksRendered: true,
-    //     },
-    //     lastUpdatedKey: "navigation",
-    //   };
-    // }
+
 
     return {
       ...state,
